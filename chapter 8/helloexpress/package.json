@@ -1,0 +1,17 @@
+{
+  "name": "helloexpress",
+  "version": "0.0.1",
+  "description": "Hello world sample application in Node.js + Express",
+  "scripts": {
+    "start": "DEBUG=express:* babel-node server.js"
+  },
+  "author": "Cássio Zen",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.29",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "history": "^1.15.0",
+    "react-router": "^1.0.2"
+  }
+}

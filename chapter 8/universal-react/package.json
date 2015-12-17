@@ -1,0 +1,23 @@
+{
+  "name": "react-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "DEBUG=express:* node_modules/.bin/babel-node -- server.js",
+    "build": "webpack -p",
+    "start": "npm run build && npm run server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.29",
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.3.2",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "webpack": "^1.12.2"
+  }
+}

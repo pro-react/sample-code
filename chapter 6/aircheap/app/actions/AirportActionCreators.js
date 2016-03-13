@@ -1,6 +1,6 @@
 import AppDispatcher from '../AppDispatcher';
 import constants from '../constants'
-import AirCheapAPI from '../api/AirCheapApi';
+import AirCheapAPI from '../api/AirCheapAPI';
 
 let AirportActionCreators = {
 

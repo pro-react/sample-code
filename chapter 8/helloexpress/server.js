@@ -3,9 +3,10 @@ import express from 'express';
 const app = express();
 
 app.set('view engine', 'ejs');
+app.set('views', './views')
 
 app.get('/', (request, response) => {
-  response.render('index',{message:'Hello Wosrld'});
+  response.render('index',{message:'Hello World (from express)'});
 });
 
 app.listen(3000, ()=>{

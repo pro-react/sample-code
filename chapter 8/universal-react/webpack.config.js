@@ -1,4 +1,3 @@
-var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
@@ -6,19 +5,13 @@ module.exports = {
     './browser.js'
   ],
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
+    path: './public',
+    filename: "bundle.js"
   },
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loaders: ['babel'],
-      include: path.join(__dirname)
-    },{
-      test: /\.css$/,
-      loader: 'style!css'
+      loader: 'babel'
     }]
-  }};
+  }
+};

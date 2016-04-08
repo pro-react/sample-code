@@ -3,21 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "server": "DEBUG=express:* node_modules/.bin/babel-node -- server.js",
-    "build": "webpack -p",
+    "server": "DEBUG=express:* babel-node --debug server.js",
+    "build": "NODE_ENV=production webpack -p",
     "start": "npm run build && npm run server"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel": "^5.8.29",
-    "babel-core": "^5.8.29",
-    "babel-loader": "^5.3.2",
-    "ejs": "^2.3.4",
-    "express": "^4.13.3",
-    "react": "^0.14.0",
-    "react-dom": "^0.14.0",
-    "webpack": "^1.12.2"
+    "babel-core": "~6.7.*",
+    "babel-loader": "~6.2.*",
+    "babel-preset-es2015": "~6.6.*",
+    "babel-preset-react": "~6.5.*",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "history": "^1.13.0",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^1.0.0",
+    "webpack": "^1.12.*"
   }
 }

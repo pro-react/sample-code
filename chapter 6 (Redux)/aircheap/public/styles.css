@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+  padding-top: 10px;
+  border-bottom: 1px solid #ccc;
+  border-top: 4px solid #08516E;
+  height: 115px;
+  background-color: #f6f6f6;
+}
+p {
+  margin:0;
+  font-size: 10px;
+}
+.header-brand {
+  text-align: center;
+}
+.header-route {
+  margin-top: 10px;
+  margin-left: calc(50% - 300px)
+}
+.ticket {
+  padding: 20px 10px;
+  background-color: #fafafa;
+  margin: 5px;
+  border: 1px solid #e5e5df;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.ticket span {
+  display: inline-block;
+}
+.ticket-company {
+  font-weight: bold;
+  font-style: italic;
+  width: 13%;
+}
+.ticket-location {
+  text-align: center;
+  width: 29%;
+}
+.ticket-separator {
+  text-align: center;
+  width: 6%;
+}
+.ticket-connection {
+  text-align: center;
+  width: 10%;
+}
+.ticket-points {
+  width: 13%;
+  text-align: right;
+}
+
+.Select {
+  position: relative;
+  width: 290px;
+  float: left;
+  margin: 0 5px;
+}
+.Select-control {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: table;
+  width: 100%;
+}
+.Select-placeholder {
+  color: #aaa;
+}
+.Select-placeholder,
+.Select-control .Select-value {
+  line-height: 34px;
+  padding: 0 10px;
+  position: absolute;
+}
+.Select-input {
+  height: 34px;
+  padding: 0 10px;
+}
+.Select-input > input {
+  background: none transparent;
+  border: 0 none;
+  font-size: inherit;
+  outline: none;
+  padding: 7px 0 12px;
+}
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select-clear-zone, .Select-arrow-zone {
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  width: 20px;
+  padding-right: 5px;
+}
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+}
+.Select-menu-outer {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-top: -3px;
+  max-height: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+}
+.Select-option {
+  cursor: pointer;
+  padding: 8px 10px;
+}
+.Select-option.is-focused {
+  background-color: rgba(0, 126, 255, 0.08);
+}
